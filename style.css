@@ -91,6 +91,7 @@ body {
 
 .main img {
   margin-bottom: 25px;
+  object-fit: cover;
   border-radius: 100%;
 }
 
@@ -215,8 +216,9 @@ body {
 }
 
 .stacks {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  /* flex-direction: row; */
+  grid-template-columns: repeat(10, 1fr);
   gap: 15px;
   background-color: rgba(11, 11, 11, 0.5);
   backdrop-filter: blur(5px);
@@ -228,6 +230,10 @@ body {
   flex-direction: row;
   text-align: center;
   font-size: 26px;
+}
+
+.stack img {
+  object-fit: contain;
 }
 
 .footer {
@@ -246,22 +252,7 @@ body {
 
 /*  create a keyframes to max-width 768px */
 @media screen and (max-width: 768px) {
-  .about_text {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 300px;
-    text-align: center;
-  }
-
-  .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .stacks {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  html {
+    display: none;
   }
 }
