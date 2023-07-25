@@ -1,304 +1,938 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="16 yaşındaki girişimci, yazılımcı, tasarımcı lise öğrencisi Furkan Esen'in portfolyosu"
-    />
-    <meta name="author" content="Furkan Esen" />
-    <meta
-      name="keywords"
-      content="Furkan Esen, furkan, esen"
-    />
-    <title>Furkan Esen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
 
-    <script async src="script.js"></script>
-  </head>
-  <body>
-    <div class="cursor"></div>
-    <nav class="navbar">
-      <div class="container">
-        <a class="nav_link" aria-label="About" href="#profile"
-          ><i class="fa-solid fa-user"></i
-        ></a>
-        <a class="nav_link" aria-label="About" href="#about"
-          ><i class="fa-solid fa-address-card"></i
-        ></a>
-        <a class="nav_link" aria-label="Projects" href="#projects"
-          ><i class="fa-solid fa-diagram-project"></i
-        ></a>
-        <a class="nav_link" aria-label="Tech Stack" href="#stack"
-          ><i class="fa-solid fa-microchip"></i
-        ></a>
-      </div>
-    </nav>
-    <header id="profile" class="main">
-      <img
-        src="assets/img/pfp.jpg"
-        width="128"
-        height="128"
-        alt="Furkan Esen Profile Picture"
-      />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Furkan Esen</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link rel="stylesheet preload" as="style" href="assets/css/fonts.css">
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+
+  <link rel="preload stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css"></noscript> 
+
+  <link rel="preload stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"></noscript>
+
+  <link rel="preload stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"></noscript>
+
+  <link rel="preload stylesheet" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
+
+  <link rel="preload stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"></noscript>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+    <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js" defer ></script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        </li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Furkan Esen</h1>
-      <p>Web Developer & Entrepeneur</p>
-      <nav class="social">
-        <a
-          class="link"
-          href="https://instagram.com/furknesn/"
-          aria-label="Instagram"
-          target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a
-          class="link"
-          href="https://twitter.com/FurkanE66975115?t=yINoogSXizDnAA6fjZ-u3g&s=09"
-          target="_blank"
-          aria-label="Twitter"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
-        <a
-          class="link"
-          href="https://github.com/furkanesenn/"
-          target="_blank"
-          aria-label="GitHub"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a
-          class="link"
-          href="https://linkedin.com/in/furkan-esen"
-          target="_blank"
-          aria-label="LinkedIn"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </nav>
-    </header>
-    <article id="about" class="about_me">
-      <h2 class="about_header">About Me</h2>
-      <p class="about_text">
-As a self-motivated and ambitious 15-year-old high school student, I, Furkan Esen, have developed a broad range of skills as a web developer, entrepreneur, and investor. With years of hard work and dedication, I have completed hundreds of projects in diverse fields, from web development to business ventures. My passion for learning and creating drives me to constantly seek out new challenges and opportunities for growth, making me a versatile and valuable asset to any team.
-<br><br>
-As a young entrepreneur, I have gained invaluable experience in managing my own ventures, from developing products to executing effective marketing and sales strategies. This experience has given me a deep understanding of the importance of clear communication and collaborative teamwork, as well as the critical skills necessary to navigate the fast-paced and ever-changing world of business.
-<br><br>
-As a skilled web developer, I have worked on numerous projects, creating intuitive and dynamic websites and applications for a diverse range of clients. My expertise in web development, including proficiency in multiple programming languages and software, allows me to create engaging and effective online experiences for users.
-<br><br>
-Looking ahead, I am eager to take on new challenges and work on innovative projects, leveraging my skills and experience as Furkan Esen to create impactful and successful outcomes. With a relentless passion for excellence and an unwavering commitment to hard work, I am confident in my ability to exceed expectations and deliver outstanding results.
-      </p>
-    </article>
-    <section id="projects" class="main_projects">
-      <h2 class="header">Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <img
-            src="assets/img/justhink.svg"
-            alt="Justhink Logo"
-            width="232"
-            height="232"
-          />
-          <p class="project_header">Justhink</p>
-        </div>
-        <div class="project">
-          <img
-            src="assets/img/hypestack.png"
-            alt="HypeStack Logo"
-            width="232"
-            height="232"
-          />
-          <p class="project_header">Hypestack</p>
-        </div>
+      <p>I'm <span class="typed" data-typed-items="Entrepreneur, Developer, Freelancer"></span></p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://instagram.com/esennfurkan" class="instagram" target="_blank"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://join.skype.com/invite/Ltify9Rg2eAZ" rel="nofollow" class="google-plus" target="_blank"><i
+            class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/in/esenfurkan/" class="linkedin" target="_blank"><i
+            class="bx bxl-linkedin"></i></a>
       </div>
-    </section>
-    <section id="stack" class="main_stack">
-      <h2 class="header">Tech Stack</h2>
-      <div class="stacks">
-        <div class="stack">
-          <img
-            src="assets/img/icons/html.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/css.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/js.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>My name is Furkan Esen, a dedicated individual proficient in various fields, driven by a deep enthusiasm
+            for business
+            and coding. Throughout my career, I have achieved notable achievements in crafting digital solutions, always
+            aspiring to
+            explore new horizons and deliver extraordinary outcomes.</p>
         </div>
 
-        <div class="stack">
-          <img
-            src="assets/img/icons/bootstrap.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/sass.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/reactjs.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.webp" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Entrepreneur &amp; Web Developer.</h3>
+            <p class="fst-italic">
+              As an enthusiastic individual, I possess a strong drive for entrepreneurship and an extensive skill set in
+              web
+              development. My goal is to pioneer innovative solutions and leave a significant mark in the digital
+              landscape.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 Apr 2007</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+                    <span>www.furkanesen.github.io</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+90 546 595 29 86</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Istanbul, Turkiye</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>16</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>High school student</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong>
+                    <span>furkanesen1900@gmail.com</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I am a young student currently residing in Istanbul, Turkiye, with a keen interest in web development and
+              entrepreneurship. My website, www.furkanesen.github.io, showcases some of my work and projects. Don't
+              hesitate to reach
+              out to me at +90 546 595 29 86 or via email at furkanesen1900@gmail.com. I am open to freelance
+              opportunities and
+              enthusiastic about collaborating on thrilling projects.
+            </p>
+          </div>
         </div>
 
-        <div class="stack">
-          <img
-            src="assets/img/icons/graphql.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Leveraging a wide-ranging set of skills that include web development, graphic design, data analysis, and
+            project
+            management, I possess strong problem-solving abilities and a steadfast dedication to continuous improvement.
+            This allows
+            me to consistently produce influential and exceptional outcomes.</p>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/remixjs.jpg"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Node.js <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">GoLang <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/tailwind.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <!-- <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/ionic.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Furkan Esen</h4>
+              <p><em>As an entrepreneurial-minded individual and skilled programmer, I thrive in creating innovative
+                  solutions and turning
+                  ideas into reality.</em></p>
+              <ul>
+                <li>Istanbul, Turkiye</li>
+                <li>+90 (546) 595-2986</li>
+                <li>furkanesen1900@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Sakıp Sabancı Anatolian High School &amp; HS (9th grade)</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Yıldız, Yıldız St. No:73, 34349 Beşiktaş/İstanbul</em></p>
+              <p>Beşiktaş Sakıp Sabancı Anatolian High School is a successful Anatolian High School located in the
+                Beşiktaş district of
+                Istanbul.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Doğa College &amp; Primary-Middle School</h4>
+              <h5>2013 - 2021</h5>
+              <p><em>Yeni, Hekimsuyu St. No:29, 34240 Gaziosmanpaşa/İstanbul</em></p>
+              <p>Doğa College offers top-notch education nationwide, instilling values that benefit our nation and
+                humanity.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Chief Technology </h4>
+              <h5>2019 - Present</h5>
+              <p><em>Experion, New York, NY </em></p>
+              <ul>
+                <li>Lead in the design, development, and implementation of the graphic, layout, and production
+                  communication materials</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
+                  project. </li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
+                  design</li>
+                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                  advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/django.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+      </div>
+    </section>End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>I am an accomplished individual who has successfully undertaken numerous web and desktop application
+            ventures, excelling
+            in software design and development, showcasing my exceptional skills and dedication to my work.
+          </p>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/cassandra.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Web</li>
+              <li data-filter=".filter-card">Desktop</li>
+              <li data-filter=".filter-web">Others</li>
+            </ul>
+          </div>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/sqlite.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-justhink.webp" class="img-fluid" alt="Justhink Website"
+                title="Justhink Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Justhink</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-justhink.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Justhink Website"><i class="bx bx-plus" ></i></a>
+                  <a href="https://justhink.net" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Justhink Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-rohan.webp" class="img-fluid" alt="Rohan Roleplay Website"
+                title="Rohan Roleplay Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Rohan Roleplay</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-rohan.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Rohan Roleplay Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Rohan Roleplay Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-away.webp" class="img-fluid" alt="Away Roleplay Website"
+                title="Away Roleplay Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Away Roleplay</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-away.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Away Roleplay Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Away Roleplay Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-gtatema.webp" class="img-fluid" alt="Coopeak Roleplay Website"
+                title="Coopeak Roleplay Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Coopeak Roleplay</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-gtatema.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Coopeak Roleplay Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Coopeak Roleplay Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-cafetema.webp" class="img-fluid" alt="Coopeak Cafe Website"
+                title="Coopeak Cafe Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Coopeak Cafe</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-cafetema.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Coopeak Cafe Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Coopeak Cafe Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-coopeak.webp" class="img-fluid" alt="Coopeak Website"
+                title="Coopeak Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Coopeak</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-coopeak.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Coopeak Website"><i class="bx bx-plus"></i></a>
+                  <a href="https://coopeak.io" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Coopeak Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-roketssal.webp" class="img-fluid" alt="RoketSSAL Website"
+                title="RoketSSAL Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>RoketSSAL</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-roketssal.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="RoketSSAL Website"><i class="bx bx-plus"></i></a>
+                  <a href="https://roketssal.netlify.app" target="_blank" data-glightbox="type: external"
+                    title="Go and see the RoketSSAL Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-coderace.webp" class="img-fluid" alt="CodeRace Website"
+                title="CodeRace Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>CodeRace</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-coderace.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="CodeRace Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" target="_blank" data-glightbox="type: external"
+                    title="Go and see the CodeRace Rail Systems Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-berkerokan.webp" class="img-fluid" alt="Berker Okan Website"
+                title="Berker Okan Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Berker Okan</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-berkerokan.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="BerkerOkan Website"><i class="bx bx-plus"></i></a>
+                  <a href="https://berkerokan.com.tr" target="_blank" data-glightbox="type: external"
+                    title="Go and see the BerkerOkan Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-jewelery.webp" class="img-fluid" alt="Jewelery Shop Website"
+                title="Jewelery Shop Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Jewelery Shop</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-jewelery.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Jewelery Shop Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" data-glightbox="type: external" title="Go and see the Jewelery Shop Website project!"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-egitmatik.webp" class="img-fluid" alt="Egitmatik Website"
+                title="Egitmatik Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Egitmatik</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-egitmatik.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Egitmatik Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" data-glightbox="type: external" title="Go and see the Egitmatik Website project!"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-tubitak.webp" class="img-fluid" alt="TÜBİTAK Project Website"
+                title="TÜBİTAK Project  Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>TÜBİTAK Project</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-tubitak.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="TÜBİTAK Project Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" data-glightbox="type: external" title="Go and see the TÜBİTAK Project Website project!"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-astralkonaklama.webp" class="img-fluid"
+                alt="TÜBİTAK Project Website" title="Astral Konaklama Website" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Astral Konaklama</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-astralkonaklama.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Astral Konaklama Website"><i class="bx bx-plus"></i></a>
+                  <a href="#" data-glightbox="type: external"
+                    title="Go and see the Astral Konaklama Website project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-assistant.webp" class="img-fluid" alt="" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Virtual Assistant</h4>
+                <p>Desktop</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-assistant.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Virtual Assistant Project"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=Zcg5g2s6TPQ" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Virtual Assistant project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-spotify.webp" class="img-fluid" alt="" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Audio-Based Remote Spotify Controller</h4>
+                <p>Desktop</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-spotify.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Audio-Based Remote Spotify Controller Project"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=PrDG0fbkqMU" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Audio-Based Remote Spotify Controller project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-scriptingrev.webp" class="img-fluid" alt="" loading="lazy">
+              <div class="portfolio-info">
+                <h4>Python Support For MTA:SA Scripting</h4>
+                <p>Desktop</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-scriptingrev.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Python Support For MTA:SA Scripting Project"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=9N6AinIswhc" target="_blank" data-glightbox="type: external"
+                    title="Go and see the Python Support For MTA:SA Scripting project!"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-database.webp" class="img-fluid" alt="" loading="lazy">
+              <div class="portfolio-info">
+                <h4>MTA:SA NoSQL DB Option From Scratch</h4>
+                <p>Desktop</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-database.webp" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="NoSQL DB Option For MTA:SA From Scratch Project"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://www.youtube.com/watch?v=9N6AinIswhc" target="_blank" data-glightbox="type: external"
+                    title="Go and see the NoSQL DB Option For MTA:SA From Scratch project!"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/mysql.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Explore tailored services to elevate your digital footprint. From web design to captivating content, make a
+            lasting
+            impact with our meticulous approach.</p>
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/postgresql.webp"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                  </path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">Web Design</a></h4>
+              <p>I create professional and user-centric websites, representing your brand strongly in the online world.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
+                  </path>
+                </svg>
+                <i class="bx bx-slideshow"></i>
+              </div>
+              <h4><a href="">Custom Software Development</a></h4>
+              <p>Our custom software development delivers tailored solutions to drive success for
+                your business.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
+                  </path>
+                </svg>
+                <i class="bx bx-arch"></i>
+              </div>
+              <h4><a href="">Software Testing</a></h4>
+              <p>Our software testing service ensures top-notch performance and reliability for your
+                applications.</p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                  </path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">SEO/SEM</a></h4>
+              <p>Boost your online visibility and reach your target audience through effective SEO and SEM strategies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                  </path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="">Digital Marketing</a></h4>
+              <p>Our digital marketing strategies drive targeted traffic and engage your audience for measurable
+                success.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                  </path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">UI/UX Design</a></h4>
+              <p>Attention-grabbing UI/UX designs that enhance your visual identity and communicate your message.
+              </p>
+            </div>
+          </div>
+
+
         </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/mongodb.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/mariadb.jpg"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/go.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/lua.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/py.png"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
-        <div class="stack">
-          <img
-            src="assets/img/icons/nodejs.webp"
-            alt="Icons"
-            width="64"
-            height="64"
-          />
-        </div>
+
       </div>
     </section>
-    <footer class="footer">
-      <p class="footer_text">code & design by <span>wearus &hearts;</span></p>
-    </footer>
-  </body>
+    <!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.webp" class="testimonial-img" alt="">
+                <h3>Burak Erden</h3>
+                <h4>Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.webp" class="testimonial-img" alt="">
+                <h3>Berker Okan</h3>
+                <h4>Author &amp; Teacher</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.webp" class="testimonial-img" alt="">
+                <h3>Dilasu Pala</h3>
+                <h4>Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.webp" class="testimonial-img" alt="">
+                <h3>Mert Mustafa Göksin</h3>
+                <h4>Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I had my website built for my own hosting company, and I am extremely satisfied. Mr. Furkan kept us
+                  informed throughout
+                  the process and provided quick responses to all of my questions. In one word, it was exceptional!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.webp" class="testimonial-img" alt="">
+                <h3>Samet Paşahan</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I purchased a website and admin panel for my own company. Mr. Furkan is a highly skilled and organized
+                  individual; his
+                  assistance has been invaluable to us.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Istanbul, Turkiye</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>furkanesen1900@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+90 546 595 29 86</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Currently Inactive</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Furkan Esen</h3>
+      <p>The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt</p>
+
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Furkan Esen</span></strong>. All Rights Reserved <br>
+        Some of the photos of clients in the testimonials section are stock photos, as per the clients' preference.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+</body>
+
 </html>
