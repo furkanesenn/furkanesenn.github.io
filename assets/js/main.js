@@ -175,11 +175,9 @@
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
 
       let portfolioFilters = select('#portfolio-flters li', true);
+
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
@@ -187,14 +185,21 @@
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
+        
+        const filter = this.dataset.filter.slice(1);
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+        select('.portfolio-item', true).forEach(function(el) {
+          if (el.classList.contains(filter)) {
+            el.style.display = 'block'
+          } else {
+            el.style.display = 'none'
+          }
+
         });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
+
+        AOS.refresh()
       }, true);
+
     }
 
   });
