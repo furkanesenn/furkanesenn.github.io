@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: 
+
+Sitemap: https://furkanesenn.github.io/sitemap.xml
